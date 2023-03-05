@@ -1,17 +1,17 @@
 {
-  "name": "sketch-assistant-template",
-  "homepage": "https://github.com/sketch-hq/sketch-assistant-template",
+  "name": "leanix-ux-assistant",
+  "homepage": "https://github.com/pavanmadiraju-leanix/sketchassistant",
   "version": "1.0.0",
   "main": "dist/index.js",
   "sketch": "dist/sketch.js",
   "license": "MIT",
   "sketch-assistant": {
-    "title": "Sketch Assistant Template",
-    "description": "Template repository for a starter Assistant project",
-    "icon": ""
+    "title": "LeanIX UX Assistant",
+    "description": "A Sketch Assistant observing the guidelines defined by LeanIX UX team",
+    "icon": "https://www.leanix.net/hubfs/LeanIX_favi.png"
   },
   "author": {
-    "name": "Your Name or Company Name"
+    "name": "Pavan Madiraju"
   },
   "keywords": [
     "sketch",
@@ -34,6 +34,7 @@
   "devDependencies": {
     "@sketch-hq/sketch-assistant-utils": "6.5.2",
     "@types/jest": "27.4.1",
+    "@types/lodash": "^4.14.191",
     "@types/node": "17.0.23",
     "jest": "27.5.1",
     "node-fetch": "3.2.3",
@@ -44,6 +45,7 @@
     "webpack-cli": "4.9.2"
   },
   "dependencies": {
-    "@sketch-hq/sketch-assistant-types": "6.5.0"
+    "@sketch-hq/sketch-assistant-types": "6.5.0",
+    "@sketch-hq/sketch-core-assistant": "^6.5.0"
   }
 }

@@ -1,24 +1,32 @@
-import { AssistantPackage, RuleDefinition } from '@sketch-hq/sketch-assistant-types'
+import CoreAssistant from '@sketch-hq/sketch-core-assistant'
+import { AssistantPackage } from '@sketch-hq/sketch-assistant-types'
+import _ from 'lodash'
 
-const helloWorld: RuleDefinition = {
-  rule: async (context) => {
-    context.utils.report('Hello world')
-  },
-  name: 'sketch-assistant-template/hello-world',
-  title: 'Hello World',
-  description: 'Reports a hello world message',
-}
+import { duplicateArtboards } from './rules/duplicate-artboards'
+import { emptyGroup } from './rules/empty-group'
 
-const assistant: AssistantPackage = async () => {
-  return {
-    name: 'sketch-assistant-template',
-    rules: [helloWorld],
-    config: {
-      rules: {
-        'sketch-assistant-template/hello-world': { active: true },
+const assistant: AssistantPackage = [
+  CoreAssistant,
+  async () => {
+    return {
+      name: 'leanix-ux-assistant',
+      rules: [
+        duplicateArtboards,
+        emptyGroup,
+      ],
+      config: {
+        rules: {
+          'leanix-ux-assistant/duplicate-artboards': { active: true },
+          'leanix-ux-assistant/empty-group': { active: true },
+          'leanix-ux-assistant/text-disallow': {
+            active: true,
+            //patterns in lowercase, will be checked case insensitive
+            pattern: ['lorem ipsum'],
+          },
+        }, 
       },
-    },
-  }
-}
+    }
+  },
+]
 
 export default assistant
