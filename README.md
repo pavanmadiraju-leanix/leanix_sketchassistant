@@ -1,16 +1,13 @@
-# sketch-assistant-template
+# LeanIX UX Assistant for Sketch
 
-> 💁‍♀️ This repository contains a starter project for developing a new Assistant.
+> 💁‍♀️ This Sketch assistant checks a document for empty groups & duplicate artboards.
 
-👉
-[Click here to generate a new project using this repository as a template](https://github.com/sketch-hq/sketch-assistant-template/generate)
+## About Sketch Assistants
 
-## Getting started
+First time using a Sketch Assistant? 🤔
+[How can I add assistant to my sketch file?](https://www.sketch.com/docs/assistants/#adding-an-assistant-from-a-url-or-file)
 
-For in-depth guides head over to the [Sketch Developer](https://developer.sketch.com/assistants/)
-site.
+## Links
 
-- [Getting started](https://developer.sketch.com/assistants/getting-started)
-- [Write a rule](https://developer.sketch.com/assistants/write-a-rule)
-- [Publishing](https://developer.sketch.com/assistants/publish)
-- And more!
+👉 [LeanIX](https://www.leanix.net/en/) 👉
+[Download Assistant](https://www.npmjs.com/package/leanix-ux-assistant)
