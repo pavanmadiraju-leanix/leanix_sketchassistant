@@ -9,5 +9,6 @@ First time using a Sketch Assistant? 🤔
 
 ## Links
 
-👉 [LeanIX](https://www.leanix.net/en/) 👉
-[Download Assistant](https://www.npmjs.com/package/leanix-ux-assistant)
+👉 [LeanIX](https://www.leanix.net/en/)
+
+👉 [Download Assistant](https://www.npmjs.com/package/leanix-ux-assistant)
